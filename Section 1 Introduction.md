@@ -91,3 +91,26 @@ Some useful shortcuts for the **panes**:
 - <kbd>Alt + Arrow</kbd>: (the `Up`, `Down`, `Left`, or `Right` arrows) will switch to the pane in the direction of the arrow key, and any pane can be clicked with the mouse to activate it.
 - <kbd>Alt + Shift + Arrow</kbd>: resize the active pane in that direction
 - <kbd>Ctrl + Shift + W</kbd>: close a pane
+
+
+
+
+
+Shortcuts for Terminal output management:
+
+- <kbd>Ctrl + Shift + F</kbd>: open the search bar, while you may use `findstr` in the command prompt, `Select-String` in PowerShell, or `grep` on Linux/Unix shells
+  - Subsequent presses of <kbd>Enter</kbd>: find subsequent occurrences of the search term
+  - <kbd>Shift + Enter</kbd>: reverse the search direction
+- <kbd>Ctrl + Shift + C</kbd>: always copy selected text. If there's no text selected, then nothing happens
+- <kbd>Ctrl + C</kbd>: copy text if text is selected; otherwise interrupt the currently running command
+- Right-clicking: when text is selected will copy that text
+- `copy on select`  supported: default to **false**
+- <kbd>Ctrl + V</kbd>: paste
+- <kbd>Ctrl + Shift + V</kbd>: paste
+- <kbd>Shift + insert</kbd>: paste
+- `mouse-based pasting` supported: clicking the right mouse button will paste from the clipboard if no text is selected
+- <kbd>Ctrl + Minus</kbd>: zoom out the screen to decrease the font size
+- <kbd>Ctrl + Equals</kbd>: zoom in the screen to increase the font size
+- <kbd>Ctrl + MouseScrolling</kbd>: scale the font size as desired
+- <kbd>Ctrl + Shift + P</kbd>: open the command palette. The best part about the command palette is that it shows the associated keyboard shortcuts for each command
+- `multiple-level menus` supported in the Command Palette (with the ">" icon)
