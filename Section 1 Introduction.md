@@ -47,3 +47,47 @@ $ wt -F
 
 
 
+
+
+## Ch02 Learning the Windows Terminal UI
+
+Get rid of <kbd>Ctrl + Tab</kbd>, please. 
+
+Get used to the **terminal tabs**, just like in your Chrome or Firefox browser.
+
+
+
+Some useful shortcuts for the **tabs**:
+
+<kbd>Ctrl + Shift + T</kbd>: open a new tab with our default shell
+
+<kbd>Ctrl + Shift + W</kbd>: close the current tab
+
+<kbd>Ctrl + Shift + Space</kbd>: open the new shell dropdown menu. The list would grow automatically, and the following shortcuts would be available: <kbd>Ctrl + Shift + 1</kbd>, <kbd>Ctrl + Shift + 2</kbd>, ...
+
+<kbd>Ctrl + Shift + D</kbd>: open a "duplicate" of the currently active tab
+
+<kbd>Ctrl + Tab</kbd>: navigate to the next tab
+
+<kbd>Ctrl + Shift + Tab</kbd>: navigate back
+
+<kbd>Ctrl + Alt + [1-9]</kbd>: activate the tab at that index
+
+Besides, Tabs also support **drag-and-drop reordering**
+
+
+
+Set tab color: Right-click on a tab and select `Color…` to open a color picker
+
+
+
+Some useful shortcuts for the **panes**:
+
+- <kbd>Alt</kbd> + clicking the plus button: open the default shell in a new pane
+- <kbd>Alt</kbd> + selecting a shell from the new shell dropdown menu: open that shell in a new pane.
+- <kbd>Alt + Shift + D</kbd>: duplicate the current shell into a new pane (while new tabs are opened by <kbd>Ctrl</kbd>)
+- <kbd>Alt + Shift + Minus</kbd>: open a new default shell horizontally (create a **horizontal border**)
+- <kbd>Alt + Shift + Equals</kbd>: open a new pane vertically (create a **vertical border**)
+- <kbd>Alt + Arrow</kbd>: (the `Up`, `Down`, `Left`, or `Right` arrows) will switch to the pane in the direction of the arrow key, and any pane can be clicked with the mouse to activate it.
+- <kbd>Alt + Shift + Arrow</kbd>: resize the active pane in that direction
+- <kbd>Ctrl + Shift + W</kbd>: close a pane
