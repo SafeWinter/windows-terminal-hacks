@@ -166,7 +166,7 @@ WSL2 is primarily targeted at running command-line applications (`cat`, `ls`, `g
 > 2. set default version: `wsl --set-default-version 2`
 > 3. Install Ubuntu on **Microsoft Store**: use version 20.04
 >    ![image-20211126171641963](./imgs/s1/s1c3-wsl2-ubuntu.png)
-> 4. Set user info: **root**/**root** 
+> 4. Set user info: **root**/**root** (**z**/**123456** on Asus PC)
 >    1. Run from Powershell: `wsl.exe --user root`
 >    2. Change password for user **root**: `passwd root` 
 > 5. Bug fixed：
@@ -216,3 +216,4 @@ Any Windows executable can run from inside Ubuntu, as long as it's suffixed with
 For instance, run a Powershell program with `powershell.exe` in WSL2:
 
 ![image-20211126180344748](./imgs/s1/s1c3-runPowershellFromWSL2.png)
+
