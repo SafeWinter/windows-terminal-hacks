@@ -53,7 +53,7 @@ $ wt -F
 
 Get rid of <kbd>Ctrl + Tab</kbd>, please. 
 
-Get used to the **terminal tabs**, just like in your Chrome or Firefox browser.
+Instead, get used to the **terminal tabs**, just like in your Chrome or Firefox browser.
 
 
 
@@ -77,7 +77,9 @@ Besides, Tabs also support **drag-and-drop reordering**
 
 
 
-Set tab color: Right-click on a tab and select `Color…` to open a color picker
+> **Set tab color**: 
+>
+> Right-click on a tab and select `Color…` to open a color picker
 
 
 
@@ -96,7 +98,7 @@ Some useful shortcuts for the **panes**:
 
 
 
-Shortcuts for Terminal output management:
+Shortcuts for Terminal **output management**:
 
 - <kbd>Ctrl + Shift + F</kbd>: open the search bar, while you may use `findstr` in the command prompt, `Select-String` in PowerShell, or `grep` on Linux/Unix shells
   - Subsequent presses of <kbd>Enter</kbd>: find subsequent occurrences of the search term
@@ -114,3 +116,4 @@ Shortcuts for Terminal output management:
 - <kbd>Ctrl + MouseScrolling</kbd>: scale the font size as desired
 - <kbd>Ctrl + Shift + P</kbd>: open the command palette. The best part about the command palette is that it shows the associated keyboard shortcuts for each command
 - `multiple-level menus` supported in the Command Palette (with the ">" icon)
+
