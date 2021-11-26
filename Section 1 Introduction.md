@@ -8,7 +8,7 @@
 > - **shell**: doesn't have a UI; it's a command-line program. require a terminal to collect input and display output
 > - `cmd.exe` and `powershell.exe` will implicitly start the `conhost.exe` terminal
 
-![image-20211125231206874](F:\Courses\winTerminal\imgs\s1\s1c1.png)
+![image-20211125231206874](./imgs\s1\s1c1-1.png)
 
 
 
@@ -23,7 +23,7 @@ New features of Windows Terminal:
 Q: How to update Windows Terminal automatically?
 A: inside the Microsoft Store app, enable automatic updates by going to **Settings** and select **Update apps automatically**
 
-![image-20211125232913231](F:\Courses\winTerminal\imgs\s1\s1c1-2.png)
+![image-20211125232913231](./imgs/s1/s1c1-2.png)
 
 
 
