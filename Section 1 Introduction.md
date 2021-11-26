@@ -117,3 +117,102 @@ Shortcuts for Terminal **output management**:
 - <kbd>Ctrl + Shift + P</kbd>: open the command palette. The best part about the command palette is that it shows the associated keyboard shortcuts for each command
 - `multiple-level menus` supported in the Command Palette (with the ">" icon)
 
+
+
+
+
+## Ch03 Configuring an Ubuntu Linux profile
+
+
+
+Installing **Windows Subsystem for Linux, version 2** (**WSL2**)
+
+### technical requirements: 
+
+1. Windows: version 1903+ (by `winver`)
+2. ARM64: version 2004+
+
+
+
+### Why use WSL2?
+
+- certain tasks are easier on Linux/Unix OS
+- smaller third-party don't support both OS
+- deep integration with `Win10`
+- a fast, lightweight way to run Linux programs on Windows
+- not intended for production hosting
+- focused on running dev and DevOps tasks on the local computer
+
+
+
+> **WSL1** vs **WSL2**
+>
+> - WSL1: a translation layer between Linux and Windows system calls
+> - WSL2: ran a real Linux kernel on Hyper-V virtualization (3 to 5 times faster)
+
+
+
+WSL2 is primarily targeted at running command-line applications (`cat`, `ls`, `grep` ...)
+
+
+
+
+
+### How to Install WSL2
+
+> 1. enable 2 features：
+>    1. Virtual Machine Platform
+>    2. Windows Subsystem for Linux
+> 2. set default version: `wsl --set-default-version 2`
+> 3. Install Ubuntu on **Microsoft Store**: use version 20.04
+>    ![image-20211126171641963](./imgs/s1/s1c3-wsl2-ubuntu.png)
+> 4. Set user info: **root**/**root** 
+>    1. Run from Powershell: `wsl.exe --user root`
+>    2. Change password for user **root**: `passwd root` 
+> 5. Bug fixed：
+>    1. Q: 参考的对象类型不支持尝试的操作。[已退出进程，代码为 4294967295]
+>    2. A: Run windows terminal as Admin: `netsh winsock reset`
+
+
+
+### Installing Nginx on WSL2
+
+```bash
+# Update Ubuntu
+sudo apt update
+# install nginx
+sudo apt install nginx (press 'y')
+# Configuration
+sudo nano /etc/nginx/sites-enabled/default
+# listen on port: 8000
+# Start Nginx service
+service nginx start
+# Stop Nginx service
+service nginx stop
+```
+
+![image-20211126175126326](./imgs/s1/s1c3-startNginx.png)
+
+
+
+### Bidirectional access in Windows and Ubuntu
+
+1. Access Windows files in Ubuntu: disk `C` and `D` are mounted under `/mnt/`:
+
+   ![image-20211126174552628](./imgs/s1/s1c3-ls-mnt.png)
+
+2. Access Ubuntu from Windows: run **Windows Explorer** from inside **WSL2** by typing `explorer.exe`:
+
+   ![image-20211126180151984](./imgs/s1/s1c3-accessWindowsFromLinux0.png)
+
+   ![image-20211126175453432](./imgs/s1/s1c3-accessWindowsFromLinux.png)
+
+Note the prefix: `\\wsl$\Ubuntu`. If another distribution was installed, like Debian, the prefix would be `\\wsl$\Debian`. This style of path, known as a **universal naming convention** path (**UNC path**)
+
+UNC path is used frequently in Windows to refer to network resources.
+
+Any Windows executable can run from inside Ubuntu, as long as it's suffixed with a `.exe` extension.
+
+For instance, run a Powershell program with `powershell.exe` in WSL2:
+
+![image-20211126180344748](./imgs/s1/s1c3-runPowershellFromWSL2.png)
