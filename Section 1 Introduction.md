@@ -8,7 +8,7 @@
 > - **shell**: doesn't have a UI; it's a command-line program. require a terminal to collect input and display output
 > - `cmd.exe` and `powershell.exe` will implicitly start the `conhost.exe` terminal
 
-![image-20211125231206874](./imgs\s1\s1c1-1.png)
+![terminal vs shell](./imgs/s1/s1c1-1.png)
 
 
 
